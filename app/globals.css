@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#root {
+  overflow-x: hidden;
+  @apply bg-main;
+}
+
+/* body:hover > .circle {
+  display: flex !important;
+} */
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
