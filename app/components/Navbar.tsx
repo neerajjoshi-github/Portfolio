@@ -38,15 +38,21 @@ const Navbar = () => {
   return (
     <>
       <nav className="z-20 bg-main/20 backdrop-blur-lg border-b border-white text-white fixed top-0 left-0 w-full flex items-center justify-between px-6 sm:px-10 h-16">
-        <div className="max-lg:hidden absolute right-[180px] -z-[10] -bottom-[92px] w-44">
-          <img className="w-full" src="/gifs/cat1.gif" alt="" />
-          <span className="absolute bottom-[91px] left-0 w-full h-px bg-white"></span>
+        <div className="max-md:hidden absolute right-[150px] -z-[10] -top-[31px] w-44">
+          <img className="w-full" src="/gifs/cat-gif.gif" alt="" />
         </div>
         <nav className="hidden sm:flex items-center gap-10 uppercase font-semibold">
           {links.map((link, id) => {
             return (
               <Fragment key={id}>
-                <Link href={link.pathname} className={`group relative`}>
+                <Link
+                  href={link.pathname}
+                  className={`${
+                    link.pathname === pathname
+                      ? "text-shadow"
+                      : "hover:text-shadow"
+                  } group relative font-bold`}
+                >
                   {link.title}
                   {link.pathname === pathname && (
                     <motion.span

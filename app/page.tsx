@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="text-6xl lg:text-8xl font-caveat font-bold">
             <span className="mr-2">I</span>'m Neeraj Joshi
           </h1>
-          <div className="flex flex-col max-sm:px-4 gap-5 items-end font-mont">
+          <div className="flex flex-col max-sm:px-4 gap-5 items-end">
             <p className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-caveat">
               &#8213; A full stack web develper
             </p>

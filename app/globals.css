@@ -22,3 +22,9 @@ body,
   writing-mode: vertical-lr;
   text-orientation: upright;
 }
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 3px 2px 2px #e02e85;
+  }
+}
