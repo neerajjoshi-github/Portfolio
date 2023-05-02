@@ -5,6 +5,7 @@ import { Sparkles, OrbitControls, Html, Stars } from "@react-three/drei";
 import { motion } from "framer-motion";
 import PageWrapper from "../components/PageWrapper";
 import ScrollDownButton from "../components/ScrollDownButton";
+import LinkButton from "../components/LinkButton";
 
 const page = () => {
   const hoverEffectText =
@@ -54,19 +55,9 @@ const page = () => {
                       );
                     })}
                   </h2>
-                  <a
-                    href="mailto:neerajjoshi7037@gmail.com"
-                    target="_blank"
-                    className="max-sm:shadow-primary group relative mt-4 shadow-lg duration-700 shadow-white hover:shadow-primary text-white font-semibold"
-                  >
-                    <button className="select-none text-xl backdrop-blur-sm cursor-pointer py-2 px-10 duration-150 border-2 border-white">
-                      Say Hello!
-                    </button>
-                    <span className="group-hover:w-full duration-500 absolute top-0 left-0 w-0 h-[2px] bg-primary"></span>
-                    <span className="group-hover:h-full duration-500 absolute bottom-0 right-0 h-0 w-[2px] bg-primary"></span>
-                    <span className="group-hover:w-full duration-500 absolute bottom-0 right-0 w-0 h-[2px] bg-primary"></span>
-                    <span className="group-hover:h-full duration-500 absolute top-0 left-0 h-0 w-[2px] bg-primary"></span>
-                  </a>
+                  <LinkButton herf="mailto:neerajjoshi7037@gmail.com">
+                    Say Hello!
+                  </LinkButton>
                 </div>
               </div>
               <div className="lg:w-[40%] flex flex-col justify-center h-full max-lg:border-t lg:border-l border-white text-white">

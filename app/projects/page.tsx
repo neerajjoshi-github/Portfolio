@@ -10,8 +10,8 @@ const page = () => {
         <h1 className="text-4xl sm:text-6xl font-bold font-mono">
           Things I've Built
         </h1>
-        {projectCardsData.map((data) => {
-          return <ProjectCard data={data} />;
+        {projectCardsData.map((data, index) => {
+          return <ProjectCard key={index} data={data} />;
         })}
       </div>
     </PageWrapper>
