@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Sparkles, OrbitControls, Html, Stars } from "@react-three/drei";
 import { motion } from "framer-motion";
 import PageWrapper from "../components/PageWrapper";
+import ScrollDownButton from "../components/ScrollDownButton";
 
 const page = () => {
   const hoverEffectText =
@@ -15,6 +16,7 @@ const page = () => {
     <>
       <PageWrapper>
         <div className="font-mono w-full h-[200vh] lg:h-screen">
+          <ScrollDownButton />
           <Canvas shadows className="z-[1]">
             <Html fullscreen className="flex flex-col lg:flex-row">
               <div className="lg:w-[60%] h-full flex flex-col gap-6 items-center justify-center px-6 pt-16 pb-10">

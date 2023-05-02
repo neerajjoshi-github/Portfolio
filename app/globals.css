@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body,
 #root {
   overflow-x: hidden;
@@ -26,5 +30,18 @@ body,
 @layer utilities {
   .text-shadow {
     text-shadow: 3px 2px 2px #e02e85;
+  }
+}
+
+.custom-spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

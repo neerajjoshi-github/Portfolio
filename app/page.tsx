@@ -1,6 +1,7 @@
 "use client";
 import Model from "./components/Model";
 import PageWrapper from "./components/PageWrapper";
+import ScrollDownButton from "./components/ScrollDownButton";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <div className="w-[100%] sticky top-0 left-0 md:w-[40%] h-screen md:border-l border-white">
           <Model />
         </div>
+        <ScrollDownButton />
       </main>
     </PageWrapper>
   );
