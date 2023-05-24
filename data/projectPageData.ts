@@ -14,7 +14,7 @@ export const projectCardsData: ProjectCardsArrayType = [
     titile: "Netflix Clone",
     description:
       "The Netflix clone project is a web application that aims to replicate the core features and functionalities of the popular video streaming service, Netflix. It is designed to provide users with a seamless  streaming experience, allowing them to browse, search, and watch movies and TV shows.",
-    tech: "NextJs | Tailwind CSS | API",
+    tech: "Next Js | Tailwind CSS | API | MongoDb | Next Auth ",
     githubLink: "/github/netflix-clone",
     liveLink: "/netflix-cone",
     imageUrls: [

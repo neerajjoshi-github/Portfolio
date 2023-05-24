@@ -13,8 +13,6 @@ import {
 } from "react-icons/si";
 import { IoLogoNodejs, IoLogoCss3 } from "react-icons/io";
 import { AiFillHtml5 } from "react-icons/ai";
-import { Canvas } from "@react-three/fiber";
-import { Html, OrbitControls, Sparkles, Stars } from "@react-three/drei";
 import PageWrapper from "../components/PageWrapper";
 import SparklesBackground from "../components/SparklesBackground";
 
@@ -92,7 +90,7 @@ const page = () => {
             >
               <img
                 className="w-full h-full object-cover"
-                src="/images/profileImage.jpg"
+                src="/images/profile-image1.jpg"
                 alt="Profile Image"
               />
             </motion.div>

@@ -38,9 +38,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="z-20 bg-main/20 backdrop-blur-lg border-b border-white text-white fixed top-0 left-0 w-full flex items-center justify-between px-6 sm:px-10 h-16">
-        <div className="max-md:hidden absolute right-[150px] -z-[10] -top-[31px] w-44">
+        {/* <div className="max-md:hidden absolute right-[150px] -z-[10] -top-[31px] w-44">
           <img className="w-full" src="/gifs/cat-gif.gif" alt="" />
-        </div>
+        </div> */}
         <nav className="hidden sm:flex items-center gap-10 uppercase font-semibold">
           {links.map((link, id) => {
             return (

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const links = [
   {
@@ -28,6 +28,7 @@ type MobileMenuProps = {
 };
 
 const MobileMenu: FC<MobileMenuProps> = ({ closeMenu }) => {
+  const pathname = usePathname();
   const router = useRouter();
   const onClickHandler = (pathname: string) => {
     router.push(pathname);
@@ -47,7 +48,9 @@ const MobileMenu: FC<MobileMenuProps> = ({ closeMenu }) => {
             <li
               key={link.title}
               onClick={() => onClickHandler(link.pathname)}
-              className="duration-300 hover:text-primary cursor-pointer"
+              className={`${
+                pathname === link.pathname ? "text-primary" : "text-white"
+              } duration-300 hover:text-primary cursor-pointer`}
             >
               {link.title}
             </li>

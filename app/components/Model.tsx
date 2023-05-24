@@ -7,7 +7,7 @@ import { OrbitControls, Sparkles } from "@react-three/drei";
 
 const model = () => {
   return (
-    <Canvas shadows className=" cursor-grab active:cursor-grabbing ">
+    <Canvas shadows className="cursor-grab active:cursor-grabbing ">
       <Suspense fallback={null}>
         <OrbitControls
           autoRotate
